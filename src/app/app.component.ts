@@ -2,7 +2,7 @@ import { Component, Inject, OnInit, ViewEncapsulation } from '@angular/core';
 import { TrainService } from './services/trains/trainService';
 import { Train } from './services/trains/train';
 import { ResourceList } from './services/common/resourceList';
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 import { TrainMovementService } from './services/trainMovements/trainMovementService';
 import { StationService } from './services/stations/stationService';
 import { Station } from './services/stations/station';

@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { ResourceList } from '../services/common/resourceList';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
 import { TrainMovement } from '../services/trainMovements/trainMovement';
 import { TrainMovementComponentModel } from './trainmovementComponentModel';
 
