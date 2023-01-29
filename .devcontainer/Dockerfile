@@ -12,4 +12,3 @@ FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:${VARIANT}
 
 # [Optional] Uncomment if you want to install more global node packages
 RUN su node -c "npm install -g yarn"
-RUN su node -c "npm install -g @angular/cli"
