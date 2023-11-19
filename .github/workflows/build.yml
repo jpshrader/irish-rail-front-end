@@ -1,25 +1,25 @@
-name: irish-rail-front-end
+name: build
 
 on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - name: Use Node.js 20.x
-      uses: actions/setup-node@v1
+    - name: setup node
+      uses: actions/setup-node@v4
       with:
         node-version: 20.x
 
-    - name: Build
-      run: |
-        yarn install
-        yarn build
-        yarn test
+    - name: install
+      run: yarn install
+    - name: build
+      run: yarn build
+    - name: test
+      run: yarn test
