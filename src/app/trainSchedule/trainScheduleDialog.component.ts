@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { ResourceList } from '../services/common/resourceList';
-import { MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
+import { MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { TrainMovement } from '../services/trainMovements/trainMovement';
 import { TrainMovementComponentModel } from './trainmovementComponentModel';
 
@@ -17,7 +18,7 @@ export class TrainScheduleDialogComponent implements OnInit {
 
 	constructor(
 		public dialogRef: MatDialogRef<TrainScheduleDialogComponent>,
-		@Inject(MAT_DIALOG_DATA) public componentData: TrainMovementComponentModel) {}
+		@Inject(MAT_DIALOG_DATA) public componentData: TrainMovementComponentModel) { }
 
 	ngOnInit() {
 		const { train, trainMovementService } = this.componentData;
