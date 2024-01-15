@@ -13,8 +13,8 @@
 		<mat-expansion-panel *ngFor='let movement of getTrainMovements(); first as isFirst; last as isLast'>
 			<mat-expansion-panel-header>
 				<mat-panel-title>
-					<mat-icon *ngIf="isFirst || isLast" color="{{ getTrainStopColour(movement) }}" style="margin-right: 5px;">place</mat-icon>
-					<mat-icon *ngIf="!isFirst && !isLast"color="{{ getTrainStopColour(movement) }}" style="margin-right: 5px;">{{ getLocationIcon(movement) }}</mat-icon>
+					<mat-icon *ngIf="isFirst || isLast" color="{{ getTrainStopColor(movement) }}" style="margin-right: 5px;">place</mat-icon>
+					<mat-icon *ngIf="!isFirst && !isLast"color="{{ getTrainStopColor(movement) }}" style="margin-right: 5px;">{{ getLocationIcon(movement) }}</mat-icon>
 					<b>{{ movement.locationFullName }}</b>
 				</mat-panel-title>
 				<mat-panel-description>

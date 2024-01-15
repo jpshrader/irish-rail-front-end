@@ -31,7 +31,7 @@ export class TrainScheduleDialogComponent implements OnInit {
 			this.trainMovements.resources.filter(t => this.locationTypesToDisplay.includes(t.locationType));
 	}
 
-	getTrainStopColour(movement: TrainMovement) {
+	getTrainStopColor(movement: TrainMovement) {
 		if (movement.stopType === this.CURRENT_STOPTYPE && !movement.departure) {
 			return 'accent';
 		} else if (movement.stopType === this.NEXT_STOPTYPE && movement.arrival) {
